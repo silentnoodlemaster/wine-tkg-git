@@ -256,6 +256,7 @@ else
   conflicts=('wine' 'wine-wow64' 'wine-staging' 'wine-esync')
   if [[ "$pkgname" == *-git ]]; then
     replaces=("${pkgname/%-git/-faudio-git}")
+	replaces=("${pkgname/%-git/-fsync-git}")
   fi
 fi
 
